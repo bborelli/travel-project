@@ -243,3 +243,51 @@ footer a {
 .text-center {
   text-align: center;
 }
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid-2-columns,
+  .grid-3-columns,
+  .grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-media {
+    grid-template-columns: 1fr;
+  }
+
+  .card-media img,
+  .card-media iframe {
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    height: auto;
+  }
+
+  .card-media img {
+    display: block;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
+}
